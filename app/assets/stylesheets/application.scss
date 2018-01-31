@@ -32,7 +32,8 @@
     color: #fff;
     background-color: #517fa4;
     border-color: rgba(0, 0, 0, 0.2);
-
+    height: 5vmax;
+    width: 15vmax;
 }
 .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
     color: #fff;
@@ -48,5 +49,18 @@
 }
 
 #instagram-login {
-  padding-left: 12em;
+  padding-left: 9em;
+}
+
+.fa-instagram {
+  padding-top: .35rem;
+  font-size: 5em;
+  float: left;
+}
+
+#inst-login {
+  font-size: 2em;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
 }
