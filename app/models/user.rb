@@ -1,13 +1,16 @@
 class User < ApplicationRecord
 
   def self.from_omniauth(auth)
-    require 'pry'; binding.pry
     user = User.where(uid: auth['uid']).first
-    if user.nil?
-      user = User.create(uid: auth['uid'],
-                         username: auth['info']['username'],
-                         profile_pic: auth['info']['profile_picture'],
-                         bio: auth['info']['bio'])
+    if user && user.token != auth["credentials"]["token"]
+      user.token = auth["credentials"]["token"]
+      user.save
+    elsif user.nil?
+      user = User.create(uid: auth["uid"],
+                         full_name: auth["info"]["name"],
+                         profile_pic: auth["info"]["image"],
+                         nickname: auth['info']['nickname'],
+                         token: auth["credentials"]["token"])
     end
     user
   end

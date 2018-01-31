@@ -9,7 +9,7 @@ feature 'As a User I can' do
 
     user = User.last
 
-    expect(page).to have_content(user.username)
+    expect(page).to have_content(user.nickname)
     expect(page).to have_content(user.full_name)
     expect(page).to have_content(user.bio)
     expect(page).to have_content(user.profile_picture)
