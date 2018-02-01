@@ -29,27 +29,27 @@
 }
 
 .btn-instagram {
-    color: #fff;
-    background-color: #517fa4;
-    border-color: rgba(0, 0, 0, 0.2);
-    height: 5vmax;
-    width: 15vmax;
+  color: #fff;
+  background-color: #517fa4;
+  border-color: rgba(0, 0, 0, 0.2);
+  min-height: 5vmax;
+  min-width: 15vmax;
 }
 .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
-    color: #fff;
-    background-color: #446a89;
-    border-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #446a89;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
-    background-image: none;
+  background-image: none;
 }
 .btn-instagram.disabled, .btn-instagram[disabled], fieldset[disabled] .btn-instagram, .btn-instagram.disabled:hover, .btn-instagram[disabled]:hover, fieldset[disabled] .btn-instagram:hover, .btn-instagram.disabled:focus, .btn-instagram[disabled]:focus, fieldset[disabled] .btn-instagram:focus, .btn-instagram.disabled:active, .btn-instagram[disabled]:active, fieldset[disabled] .btn-instagram:active, .btn-instagram.disabled.active, .btn-instagram[disabled].active, fieldset[disabled] .btn-instagram.active {
-    background-color: #517fa4;
-    border-color: rgba(0, 0, 0, 0.2);
+  background-color: #517fa4;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
-#instagram-login {
-  padding-left: 9em;
+#btn-instagram {
+  border-radius: 10px;
 }
 
 .fa-instagram {
@@ -58,9 +58,20 @@
   float: left;
 }
 
+@media screen and (max-width: 768px) and (min-width: 375px){
+  .fa-instagram {
+    padding-top: 100px;
+    font-size: 5em;
+    float: left;
+  }
+}
+
 #inst-login {
-  font-size: 2em;
+  font-size: 3rem;
   color: white;
   font-family: 'Playfair Display', serif;
   font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 6rem;
 }

@@ -10,6 +10,7 @@ class User < ApplicationRecord
                          full_name: auth["info"]["name"],
                          profile_pic: auth["info"]["image"],
                          nickname: auth['info']['nickname'],
+                         bio: auth['info']['bio'],
                          token: auth["credentials"]["token"])
     end
     user
