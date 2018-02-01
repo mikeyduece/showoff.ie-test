@@ -16,6 +16,7 @@
 
 #user-image {
   padding-right: 12em;
+  padding-top: 4rem;
 }
 
 .glyphicon-log-out {
@@ -34,6 +35,7 @@
   border-color: rgba(0, 0, 0, 0.2);
   min-height: 5vmax;
   min-width: 15vmax;
+  border-radius: 15px;
 }
 .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
   color: #fff;
@@ -48,25 +50,13 @@
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-#btn-instagram {
-  border-radius: 10px;
-}
-
 .fa-instagram {
   padding-top: .35rem;
   font-size: 5em;
   float: left;
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px){
-  .fa-instagram {
-    padding-top: 100px;
-    font-size: 5em;
-    float: left;
-  }
-}
-
-#inst-login {
+a#inst-login {
   font-size: 3rem;
   color: white;
   font-family: 'Playfair Display', serif;
@@ -74,4 +64,42 @@
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 6rem;
+}
+
+div.jumbotron {
+  margin-top: 2%;
+}
+
+div#logout {
+  margin-left: 92%;
+  margin-top: -26rem;
+}
+
+
+@media only screen and (max-device-width: 768px) and (min-device-width: 375px){
+  .fa-instagram {
+    padding-top: .1rem;
+    font-size: 5em;
+    float: left;
+  }
+
+  a#inst-login {
+    font-size: 2.6rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    line-height: 6rem;
+  }
+
+  .glyphicon-log-out {
+    font-size: 6rem;
+    margin-top: .37rem;
+  }
+
+  div#logout {
+    margin-left: 92%;
+    margin-top: -30rem;
+  }
 }
