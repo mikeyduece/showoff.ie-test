@@ -11,7 +11,27 @@
   </head>
 
   <body>
-    <% if !current_user %>
+    <% if current_user %>
+      <div class='container-fluid'>
+        <div class='jumbotron'>
+          <div class='row'>
+            <div id='user-image' class='col-sm-1'>
+              <%= image_tag current_user.profile_pic, class: 'rounded-circle' %>
+            </div>
+            <div class=col-sm-1>
+              <h1><%= current_user.nickname %></h1>
+              <h3><%= current_user.full_name %></h3>
+              <h3><%= current_user.bio %></h3>
+            </div>
+            <div class='col-sm-9'></div>
+            <div id='logout' class='col-sm-1'>
+              <%= link_to '', signout_path, method: 'delete', class: 'glyphicon glyphicon-log-out' %>
+            </div>
+            <%= link_to '', user_path(current_user), class: "fa fa-user" %>
+          </div>
+        </div>
+      </div>
+    <% else %>
       <div class='container-fluid'>
         <div id='no-user' class='jumbotron'>
           <div class='row'>

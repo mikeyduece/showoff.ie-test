@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  before_save :biography
 
   def self.from_omniauth(auth)
     user = User.where(uid: auth['uid']).first
@@ -21,5 +22,11 @@ class User < ApplicationRecord
 
     user
   end
+
+  private
+
+    def biography
+      self.bio = self.bio.split
+    end
 
 end
