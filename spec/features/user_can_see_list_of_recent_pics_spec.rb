@@ -7,21 +7,22 @@ feature 'As a User I can' do
 
       visit '/'
       click_link('Login with Instagram')
+      find('.glyphicon.glyphicon-user').click
 
       user = User.last
+      pics = user.own_pics
 
       expect(current_path).to eq(user_path(User.last))
 
       within('.post-image', match: :first) do
-        expect(page.find('.post-image')['src']).to have_content(user.own_pics[0].image)
+        expect(page.find('.ig-post-pic')['src']).to have_content(user.own_pics[0].image)
       end
 
       expect(page).to have_css('.post-image')
       expect(page).to have_css('.caption')
       expect(page).to have_css('.likes')
       expect(page).to have_css('.tags')
-      expect(page).to have_css('.user-post-info')
-      expect(page).to have_content(pics.caption)
+      expect(page).to have_content(pics[0].caption)
     end
   end
 end
