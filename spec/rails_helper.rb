@@ -27,15 +27,15 @@ def stub_omniauth
   # omniauth will use when a user tries to authenticate:
   OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
     "provider" => "instagram",
+    'uid' => ENV['instagram_uid'],
     'info' => {
-      'uid' => "1234567890",
       'image' => "https://scontent-frx5-1.cdninstagram.com/vp/3230896e49952035c4a21d078561d30f/5B1DB27A/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
       'nickname' => "magicmikebjj",
       'bio' => "www.ckfightlife.com www.breakpointfc.com @breakpointfc @ckfightlife @highaltitudema",
       'name' => 'Mike Heft'
     },
     'credentials' => {
-      'token' => '123483384'
+      'token' => ENV['instagram_test']
     }
   })
 end

@@ -10,10 +10,13 @@ feature 'As a User I can' do
 
       user = User.last
 
+      within('#user-image', match: :first) do
+        expect(page.find('.rounded-circle')['src']).to have_content(user.profile_pic)
+      end
+
       expect(page).to have_content(user.nickname)
       expect(page).to have_content(user.full_name)
-      expect(page).to have_content(user.bio)
-      expect(page.find('.rounded-circle')['src']).to have_content(user.profile_pic)
+      expect(page).to have_content(JSON.parse(user.bio)[0])
     end
   end
 end
