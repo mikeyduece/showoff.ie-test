@@ -6,7 +6,6 @@ class InstagramService
       faraday.params['access_token'] = token
       faraday.adapter Faraday.default_adapter
     end
-    # require 'pry'; binding.pry
   end
 
   def own_pics

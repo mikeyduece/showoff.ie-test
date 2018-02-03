@@ -14,7 +14,7 @@ describe "Instagram Service" do
   end
 
   context 'instance methods' do
-    it '#get_url' do
+    it '#own_pics' do
       VCR.use_cassette('.own_pics') do
         user = User.from_omniauth(stub_omniauth)
         url     = "users/#{user.uid}/media/recent/"

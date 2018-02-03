@@ -75,10 +75,11 @@ div#logout {
   margin-top: -26rem;
 }
 
-.fa-user {
+.glyphicon-user {
   font-size: 7rem;
   margin-left: 93.25%;
   margin-top: -6rem;
+  cursor: pointer;
 }
 
 
@@ -108,4 +109,55 @@ div#logout {
     margin-left: 92%;
     margin-top: -30rem;
   }
+}
+
+h6 {
+  display: inline;
+}
+
+.tags {
+  height: 10rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+  margin-bottom: 4rem;
+}
+
+.card {
+  padding-top: 1%;
+  margin: 1rem;
+}
+
+.card-title > img {
+  height: 10%;
+  width: 10%;
+  display: inline-block;
+}
+
+div.card-title {
+  padding-left: 1rem;
+}
+
+p.ig-username {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+div.post-image > img {
+  height: 30rem;
+  width: 39.8rem;
+}
+
+.likes {
+  font-weight: bolder;
+  padding-left: .1rem;
+}
+
+.user-pics {
+  margin: 5%;
+}
+
+.card-block {
+  padding: 1.5rem;
 }

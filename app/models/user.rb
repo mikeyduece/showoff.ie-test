@@ -24,8 +24,7 @@ class User < ApplicationRecord
   end
 
   def own_pics
-    ig = InstagramService.new(self.uid, self.token)
-    ig.own_pics
+    CreateIgPic.new(self.uid, self.token).owned_pics
   end
 
   private

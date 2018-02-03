@@ -1,14 +1,27 @@
 
-<div class='row'>
+<div class='row user-pics'>
   <% current_user.own_pics.each do |post| %>
-    <div class="card" style="width: 20rem;">
-      <div class='post-image'>
 
+    <div class="card" style="width: 40rem;">
+      <div class='card-title'>
+        <img class='rounded-circle' src=<%= post.ig_user[:profile_picture] %> alt="Ig poster pic" />
+        <p class='ig-username'><%= post.ig_user[:username] %></p>
       </div>
+
+      <div class='post-image'>
+        <img src=<%= post.image %> alt="Instagram Post" />
+      </div>
+
       <div class="card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="likes"><%= post.likes %> likes</h5>
+        <div class='tags card-text'>
+          <p class'caption'><%= post.caption %></p>
+          <% post.tags.each do |tag| %>
+            <h6>#<%= tag %></h6>
+          <% end %>
+        </div>
+
+
       </div>
     </div>
   <% end %>
