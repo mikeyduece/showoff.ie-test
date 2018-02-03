@@ -21,7 +21,13 @@
             <div class=col-sm-1>
               <h1><%= current_user.nickname %></h1>
               <h3><%= current_user.full_name %></h3>
-              <h3><%= current_user.bio %></h3>
+              <% current_user_bio.each do |bio| %>
+                <% if bio[0].include?('@') %>
+                  <h5><%= link_to bio, "http://#{bio}.com" %></h5>
+                <% else %>
+                  <h5><%= link_to bio, "http://#{bio}" %></h5>
+                <% end %>
+              <% end %>
             </div>
             <div class='col-sm-9'></div>
             <div id='logout' class='col-sm-1'>

@@ -23,6 +23,11 @@ class User < ApplicationRecord
     user
   end
 
+  def own_pics
+    ig = InstagramService.new(self.uid, self.token)
+    ig.own_pics
+  end
+
   private
 
     def biography

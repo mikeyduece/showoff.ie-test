@@ -10,6 +10,7 @@ feature 'As a User I can' do
       click_on('user-profile')
 
       expect(path).to eq(user_path(User.last))
+      expect(page).to_not have_css('.post-image', count: 1)
     end
   end
 end
