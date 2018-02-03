@@ -12,7 +12,7 @@ feature 'As a User I can' do
 
       expect(page).to have_content(user.nickname)
       expect(page).to have_content(user.full_name)
-      expect(page).to have_content(user.bio)
+      expect(page).to have_content(JSON.parse(user.bio)[0])
       expect(page.find('.rounded-circle')['src']).to have_content(user.profile_pic)
     end
   end
