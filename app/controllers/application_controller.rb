@@ -5,7 +5,11 @@ class ApplicationController < ActionController::Base
 
   helper_method :require_user,
     :current_user,
-    :current_user_bio
+    :current_user_bio,
+    :posts,
+    :follows,
+    :followed_by,
+    :website
 
   def require_user
     unless current_user || (current_user.present? && current_user.id == params[:id])
@@ -20,5 +24,21 @@ class ApplicationController < ActionController::Base
 
   def current_user_bio
     JSON.parse(current_user.bio) if current_user
+  end
+
+  def posts
+    current_user.user_media[:data][:counts][:media]
+  end
+
+  def follows
+    current_user.user_media[:data][:counts][:follows]
+  end
+
+  def followed_by
+    current_user.user_media[:data][:counts][:followed_by]
+  end
+
+  def website
+    current_user.user_media[:data][:website]
   end
 end

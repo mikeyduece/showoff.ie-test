@@ -34,6 +34,10 @@ class User < ApplicationRecord
     CreateIgPic.new(self.uid, self.token).owned_pics
   end
 
+  def user_media
+    InstagramService.new(self.uid, self.token).media
+  end
+
   private
 
   def biography

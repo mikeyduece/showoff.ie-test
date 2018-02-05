@@ -12,6 +12,10 @@ class InstagramService
     get_url("users/#{uid}/media/recent/")
   end
 
+  def media
+    get_url("users/self")
+  end
+
   private
     attr_reader :uid
 
