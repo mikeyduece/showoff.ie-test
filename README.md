@@ -22,7 +22,7 @@ View your recently uploaded media content
 
 ### Local Usage
 
-```ruby
+```
 fork and or clone repo
 cd into repo
 bundle
