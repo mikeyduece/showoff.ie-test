@@ -2,6 +2,12 @@
 
 >Application can be viewed in production at <http://showoff-ie-test.herokuapp.com/>
 
+### Usage
+
+Navigate to production site
+  ...Log in with your Instagram account
+  
+
 #### Ruby Version
 
 `2.4.1`
@@ -10,7 +16,7 @@
 
 >Instagram Omniauth
 
-### Usage
+### Local Usage
 
 ```ruby
 fork and or clone repo
