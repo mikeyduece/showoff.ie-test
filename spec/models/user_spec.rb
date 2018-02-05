@@ -8,6 +8,14 @@ RSpec.describe User, type: :model do
       user = User.last
       expect(user).to be_a(User)
     end
+
+    it 'updates user info incoming .from_omniauth if stale' do
+      user = User.from_omniauth(stub_omniauth)
+      user_2 = User.from_omniauth(stub_omniauth_2)
+
+      expect(user.attributes).to_not eq(user_2.attributes)
+      expect(user.nickname).to_not eq(user_2.nickname)
+    end
   end
 
   context 'Instance Methods' do
@@ -21,4 +29,5 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
 end
