@@ -4,11 +4,11 @@ class ApplicationController < ActionController::Base
   before_action :current_user
 
   helper_method :require_user,
-                :current_user,
-                :current_user_bio
+    :current_user,
+    :current_user_bio
 
   def require_user
-    unless current_user
+    unless current_user || (current_user.present? && current_user.id == params[:id])
       flash[:notice] = "You Must Log in or Register to View this Page"
       redirect_to root_path
     end
@@ -21,5 +21,4 @@ class ApplicationController < ActionController::Base
   def current_user_bio
     JSON.parse(current_user.bio) if current_user
   end
-
 end
