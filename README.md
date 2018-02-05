@@ -1,6 +1,6 @@
 # Showoff.ie Test Task
 
->Application can be viewed in production at <http://showoff-ie-test.herokuapp.com/>
+>Application can be viewed in production at <https://showoff-ie-test.herokuapp.com/>
 
 ### Usage
 
