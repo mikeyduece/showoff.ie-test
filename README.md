@@ -36,7 +36,11 @@ navigate to <http://localhost:3000> to view development site.
 
 ### RSpec
 
+To run test suite enter -
+
 `rspec`
+
+into your terminal
 
 >Test Coverage is at 100%
 
