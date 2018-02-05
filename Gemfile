@@ -32,7 +32,8 @@ gem 'jquery-rails'
 gem 'database_cleaner'
 gem 'faraday'
 gem 'figaro'
-gem 'omniauth', '~> 1.1.2'
+gem 'omniauth'
+gem 'omniauth-oauth2'
 gem 'omniauth-instagram', github: 'ropiku/omniauth-instagram'
 
 # Use Capistrano for deployment
