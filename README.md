@@ -5,8 +5,9 @@
 ### Usage
 
 Navigate to production site
-
-  ...Log in with your Instagram account
+Log in with your Instagram account
+View your recently uploaded media content
+  
   
 
 #### Ruby Version
