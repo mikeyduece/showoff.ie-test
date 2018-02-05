@@ -11,10 +11,10 @@ class User < ApplicationRecord
                          bio: auth['info']['bio'],
                          token: auth["credentials"]["token"])
     elsif user.present? && user.token != auth['credentials']['token'] ||
-        user.profile_pic != auth['info']['image'] ||
-        user.bio != auth['info']['bio'] ||
-        user.nickname != auth['info']['nickname'] ||
-        user.full_name != auth['info']['name']
+      user.profile_pic != auth['info']['image'] ||
+      user.bio != auth['info']['bio'] ||
+      user.nickname != auth['info']['nickname'] ||
+      user.full_name != auth['info']['name']
       user = User.update(uid: auth["uid"],
                          full_name: auth["info"]["name"],
                          profile_pic: auth["info"]["image"],
@@ -22,7 +22,12 @@ class User < ApplicationRecord
                          bio: auth['info']['bio'],
                          token: auth["credentials"]["token"]).first
     end
+
     user
+  end
+
+  def to_param
+    nickname.parameterize
   end
 
   def own_pics
@@ -31,9 +36,7 @@ class User < ApplicationRecord
 
   private
 
-    def biography
-      self.bio = self.bio.split
-    end
-
-
+  def biography
+    self.bio = self.bio.split
+  end
 end
