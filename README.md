@@ -31,7 +31,7 @@ bundle
 
 rails s
 
-navigate to <http:localhost:3000> to view development site.
+navigate to <http://localhost:3000> to view development site.
 
 
 ### RSpec
