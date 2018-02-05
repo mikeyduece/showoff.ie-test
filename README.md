@@ -9,3 +9,20 @@
 #### Oauth
 
 >Instagram Omniauth
+
+### Usage
+
+```ruby
+fork and or clone repo
+cd into repo
+bundle
+rails s
+```
+
+### RSpec
+
+`rspec`
+
+>Test Coverage is at 100%
+
+### 
