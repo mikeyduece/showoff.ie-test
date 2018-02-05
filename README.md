@@ -1,6 +1,6 @@
-# README
-
 # Showoff.ie Test Task
+
+>Application can be viewed in production at <http://showoff-ie-test.herokuapp.com/>
 
 #### Ruby Version
 
