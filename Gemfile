@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'database_cleaner'
 gem 'faraday'
 gem 'figaro'
-gem 'omniauth'
+gem 'omniauth', '~> 1.1.2'
 gem 'omniauth-instagram', github: 'ropiku/omniauth-instagram'
 
 # Use Capistrano for deployment
@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'simplecov'
   gem 'capybara'
   gem 'launchy'
   gem 'shoulda-matchers'

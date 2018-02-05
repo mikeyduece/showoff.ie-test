@@ -27,10 +27,6 @@ class User < ApplicationRecord
     CreateIgPic.new(self.uid, self.token).owned_pics
   end
 
-  def follows
-
-  end
-
   private
 
     def biography
