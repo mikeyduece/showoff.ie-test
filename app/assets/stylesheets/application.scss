@@ -17,12 +17,12 @@
 
 #user-image {
   padding-right: 12em;
-  padding-top: 4rem;
+  margin-top: -4rem;
 }
 
 .glyphicon-log-out {
-  font-size: 5em;
-  margin-top: .37em;
+  font-size: 5rem;
+  margin-top: .5em;
 }
 
 #no-user {
@@ -34,9 +34,15 @@
   color: #fff;
   background-color: #517fa4;
   border-color: rgba(0, 0, 0, 0.2);
-  min-height: 5vmax;
-  min-width: 15vmax;
+
+  // min-height: 5vmax;
+
+  // min-width: 15vmax;
   border-radius: 15px;
+  width: 35vmax;
+  height: 7vmax;
+  margin-top: 9rem;
+  margin-left: -7rem;
 }
 .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
   color: #fff;
@@ -58,31 +64,25 @@
 }
 
 a#inst-login {
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 6rem;
+  vertical-align: text-top;
 }
 
 div.jumbotron {
   margin-top: 2%;
+  height: 24rem;
 }
 
 div#logout {
-  margin-left: 92%;
-  margin-top: -26rem;
+  margin-left: 95%;
+  margin-top: -25.5rem;
 }
-
-.glyphicon-user {
-  font-size: 7rem;
-  margin-left: 93.25%;
-  margin-top: -6rem;
-  cursor: pointer;
-}
-
 
 @media only screen and (max-device-width: 768px) and (min-device-width: 375px){
   .fa-instagram {
@@ -107,8 +107,23 @@ div#logout {
   }
 
   div#logout {
-    margin-left: 92%;
-    margin-top: -30rem;
+    margin-left: 95%;
+    margin-top: -24rem;
+  }
+
+  .btn-instagram {
+    color: #fff;
+    background-color: #517fa4;
+    border-color: rgba(0, 0, 0, 0.2);
+
+    // min-height: 5vmax;
+
+    // min-width: 15vmax;
+    border-radius: 15px;
+    width: 20vmax;
+    height: 5vmax;
+    margin-top: 9rem;
+    margin-left: -4rem;
   }
 }
 
@@ -147,7 +162,7 @@ p.ig-username {
 
 div.post-image > img {
   height: 30rem;
-  width: 39.8rem;
+  width: 35.8rem;
 }
 
 .likes {
@@ -157,9 +172,40 @@ div.post-image > img {
 
 .user-pics {
   margin: 5%;
+  margin-top: 0;
 }
 
 .card-block {
   padding: 1.5rem;
 }
 
+.col-sm-4 {
+  margin-top: -6rem;
+}
+
+h5.ig-media {
+  margin: 0;
+}
+
+i.glyphicon-comment {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.9rem;
+  padding-left: 1rem;
+}
+
+i.glyphicon-heart-empty {
+  font-size: 2rem;
+}
+
+i.glyphicon-bookmark {
+  font-size: 2rem;
+  float: right;
+}
+
+i.fa-ellipsis-h {
+  float: right;
+  font-size: 2rem;
+  padding-right: 1rem;
+  padding-top: .7rem;
+}

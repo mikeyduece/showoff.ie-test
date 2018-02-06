@@ -25,9 +25,9 @@
               <%= image_tag current_user.profile_pic, class: 'rounded-circle' %>
             </div>
             <div class='col-sm-4'>
-              <h1><%= current_user.nickname %></h1>
-              <h5 class='media'><%= posts %> posts | <%= follows %> following | <%= followed_by %> followers</h5>
-              <h3><%= current_user.full_name %></h3>
+              <h2><%= current_user.nickname %></h2>
+              <h5 class='ig-media'><%= posts %> posts | <%= follows %> following | <%= followed_by %> followers</h5>
+              <h4><%= current_user.full_name %></h4>
               <% current_user_bio.each do |bio| %>
                 <% if bio[0].include?('@') %>
                   <h5><%= bio %></h5>
