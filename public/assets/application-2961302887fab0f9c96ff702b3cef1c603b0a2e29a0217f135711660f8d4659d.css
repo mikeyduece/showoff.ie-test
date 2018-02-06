@@ -8792,25 +8792,25 @@ button.close {
     display: none !important;
   }
 }
-/* line 18, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 19, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 #user-image {
   padding-right: 12em;
   padding-top: 4rem;
 }
 
-/* line 23, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 24, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .glyphicon-log-out {
   font-size: 5em;
   margin-top: .37em;
 }
 
-/* line 28, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 29, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 #no-user {
   background: url("http://creativegenie.net/wp-content/uploads/2017/07/Instagram-css-background-color-code.png");
   background-size: 100%;
 }
 
-/* line 33, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 34, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .btn-instagram {
   color: #fff;
   background-color: #517fa4;
@@ -8820,32 +8820,32 @@ button.close {
   border-radius: 15px;
 }
 
-/* line 41, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 42, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
   color: #fff;
   background-color: #446a89;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 46, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 47, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
   background-image: none;
 }
 
-/* line 49, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 50, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .btn-instagram.disabled, .btn-instagram[disabled], fieldset[disabled] .btn-instagram, .btn-instagram.disabled:hover, .btn-instagram[disabled]:hover, fieldset[disabled] .btn-instagram:hover, .btn-instagram.disabled:focus, .btn-instagram[disabled]:focus, fieldset[disabled] .btn-instagram:focus, .btn-instagram.disabled:active, .btn-instagram[disabled]:active, fieldset[disabled] .btn-instagram:active, .btn-instagram.disabled.active, .btn-instagram[disabled].active, fieldset[disabled] .btn-instagram.active {
   background-color: #517fa4;
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 54, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 55, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .fa-instagram {
   padding-top: .35rem;
   font-size: 5em;
   float: left;
 }
 
-/* line 60, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 61, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 a#inst-login {
   font-size: 3rem;
   color: white;
@@ -8856,18 +8856,18 @@ a#inst-login {
   line-height: 6rem;
 }
 
-/* line 70, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 71, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 div.jumbotron {
   margin-top: 2%;
 }
 
-/* line 74, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 75, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 div#logout {
   margin-left: 92%;
   margin-top: -26rem;
 }
 
-/* line 79, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 80, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .glyphicon-user {
   font-size: 7rem;
   margin-left: 93.25%;
@@ -8876,14 +8876,14 @@ div#logout {
 }
 
 @media only screen and (max-device-width: 768px) and (min-device-width: 375px) {
-  /* line 88, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+  /* line 89, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
   .fa-instagram {
     padding-top: .1rem;
     font-size: 5em;
     float: left;
   }
 
-  /* line 94, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+  /* line 95, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
   a#inst-login {
     font-size: 2.6rem;
     color: white;
@@ -8894,24 +8894,24 @@ div#logout {
     line-height: 6rem;
   }
 
-  /* line 104, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+  /* line 105, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
   .glyphicon-log-out {
     font-size: 6rem;
     margin-top: .37rem;
   }
 
-  /* line 109, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+  /* line 110, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
   div#logout {
     margin-left: 92%;
     margin-top: -30rem;
   }
 }
-/* line 115, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 116, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 h6 {
   display: inline;
 }
 
-/* line 119, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 120, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .tags {
   height: 10rem;
   font-size: 1rem;
@@ -8919,25 +8919,25 @@ h6 {
   margin-bottom: 4rem;
 }
 
-/* line 126, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 127, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .card {
   padding-top: 1%;
   margin: 1rem;
 }
 
-/* line 131, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 132, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .card-title > img {
   height: 10%;
   width: 10%;
   display: inline-block;
 }
 
-/* line 137, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 138, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 div.card-title {
   padding-left: 1rem;
 }
 
-/* line 141, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 142, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 p.ig-username {
   font-size: 1.5rem;
   padding-left: 1rem;
@@ -8945,24 +8945,24 @@ p.ig-username {
   display: inline-block;
 }
 
-/* line 148, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 149, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 div.post-image > img {
   height: 30rem;
   width: 39.8rem;
 }
 
-/* line 153, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 154, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .likes {
   font-weight: bolder;
   padding-left: .1rem;
 }
 
-/* line 158, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 159, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .user-pics {
   margin: 5%;
 }
 
-/* line 162, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
+/* line 163, /Users/mikeheft/turing/job_code_challenges/showoff.ie-test/app/assets/stylesheets/application.scss */
 .card-block {
   padding: 1.5rem;
 }
