@@ -22,7 +22,7 @@ View your recently uploaded media content
 
 ### Local Usage
 
-
+```ruby
 fork and or clone repo
 
 cd into repo
@@ -32,7 +32,7 @@ bundle
 rails s
 
 navigate to <http://localhost:3000> to view development site.
-
+```
 
 ### RSpec
 
@@ -44,4 +44,4 @@ into your terminal
 
 >Test Coverage is at 100%
 
-### 
+ 
